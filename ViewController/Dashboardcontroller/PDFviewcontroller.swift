@@ -20,6 +20,7 @@ class PDFviewcontroller: UIViewController,WKNavigationDelegate {
     var strTitle = String()
     var strPdf = String()
     
+    @IBOutlet weak var img_display: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,12 @@ class PDFviewcontroller: UIViewController,WKNavigationDelegate {
             let urlRequest = URLRequest(url:url!)
             webview.load(urlRequest)
             webview.navigationDelegate = self
+        }
+        else if url?.pathExtension == "jpeg" || url?.pathExtension == "png" || url?.pathExtension == "jpg" {
+            loaderView.isHidden = true
+            webview.isHidden = true
+            img_display.isHidden = false
+            img_display.sd_setImage(with: url, completed: nil)
         }
         else {
             loaderView.isHidden = true

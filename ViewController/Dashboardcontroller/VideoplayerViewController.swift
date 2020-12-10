@@ -19,9 +19,10 @@ class VideoplayerViewController: UIViewController {
     var videoUrl = ""
     var titlevideo = ""
     var descripVideo = ""
-    var Subject_id = Int()
+    var Subject_id : Int?
     var playerItem:AVPlayerItem?
     var player:AVPlayer?
+    var playPauseButton: PlayPauseButton!
     var wc = Webservice.init()
     var arrVideo = [DatumVideo]()
     var url: URL?
@@ -44,7 +45,8 @@ class VideoplayerViewController: UIViewController {
     func getVideoSub() {
                 
         if Subject_id != nil {
-            let param = ["s_subject_id": Subject_id] as [String : Any]
+            let param = ["s_subject_id": Subject_id ?? 0] as [String : Any]
+            print(param)
             let token = loggdenUser.value(forKey: TOKEN)as! String
             let headers: HTTPHeaders = ["Xapi": Xapi,
                                     "Authorization":token]
@@ -81,9 +83,19 @@ class VideoplayerViewController: UIViewController {
             self.playerset.layer.addSublayer(playerLayer)
             player?.play()
             lblTitle.text = titlevideo
+            playPauseButton = PlayPauseButton()
+            playPauseButton.avPlayer = player
+            playerset.addSubview(playPauseButton)
+            playPauseButton.setup(in: self)
         }
         
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+            super.viewWillTransition(to: size, with: coordinator)
+
+            playPauseButton.updateUI()
+        }
     
 
     @IBAction func btnbackAction(_ sender: UIButton) {
@@ -119,4 +131,85 @@ extension VideoplayerViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     
+}
+
+
+
+//Create play/pause custome button
+
+class PlayPauseButton: UIView {
+    var kvoRateContext = 0
+    var avPlayer: AVPlayer?
+    var isPlaying: Bool {
+        return avPlayer?.rate != 0 && avPlayer?.error == nil
+    }
+
+    func addObservers() {
+        avPlayer?.addObserver(self, forKeyPath: "rate", options: .new, context: &kvoRateContext)
+    }
+
+    func setup(in container: UIViewController) {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.tapped(_:)))
+        addGestureRecognizer(gesture)
+
+        updatePosition()
+        updateUI()
+        addObservers()
+    }
+
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        updateStatus()
+        updateUI()
+    }
+
+    private func updateStatus() {
+        if isPlaying {
+            avPlayer?.pause()
+        } else {
+            avPlayer?.play()
+        }
+    }
+
+    func updateUI() {
+        if isPlaying {
+            setBackgroundImage(name: "pause")
+        } else {
+            setBackgroundImage(name: "play")
+        }
+    }
+    
+    func updatePosition() {
+        guard let superview = superview else { return }
+        translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            widthAnchor.constraint(equalToConstant: 60),
+            heightAnchor.constraint(equalToConstant: 60),
+            centerXAnchor.constraint(equalTo: superview.centerXAnchor),
+            centerYAnchor.constraint(equalTo: superview.centerYAnchor)
+            ])
+    }
+
+    private func setBackgroundImage(name: String) {
+        UIGraphicsBeginImageContext(frame.size)
+        UIImage(named: name)?.draw(in: bounds)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
+        UIGraphicsEndImageContext()
+        backgroundColor = UIColor(patternImage: image)
+    }
+
+    private func handleRateChanged() {
+        updateUI()
+    }
+
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard let context = context else { return }
+
+        switch context {
+        case &kvoRateContext:
+            handleRateChanged()
+        default:
+            break
+        }
+    }
 }
