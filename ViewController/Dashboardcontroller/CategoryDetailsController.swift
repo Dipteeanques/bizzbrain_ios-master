@@ -329,7 +329,24 @@ class CategoryDetailsController: UIViewController {
                    let sucess = json.value(forKey: "success")as! Bool
                    let message = json.value(forKey: "message")as! String
                    if sucess == true {
-                       self.appDel.gotoTabbar()
+                    
+                    if (loggdenUser.value(forKey: ROLE_ID) != nil) {
+                        let role_id = loggdenUser.value(forKey: ROLE_ID)as! Int
+                        if role_id == 6 {
+                            self.appDel.gotoStudent()
+                        }
+                        else if role_id == 2{
+                            self.appDel.gotoTabbar()
+                        }
+                        else{
+                            self.appDel.gotoParent()
+                        }
+                    }
+                    else {
+                        
+                    }
+                    
+                      //gotoTabbar()
                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "gotoTabbar"), object: nil)
                        loggdenUser.removeObject(forKey: CARTCOUNT)
                        loggdenUser.removeObject(forKey: CARTVALUE)

@@ -31,6 +31,9 @@ class ProfileEditviewController: UIViewController {
     @IBOutlet weak var lblGender: UILabel!
     @IBOutlet weak var txtGender: UITextField!
     
+    
+    @IBOutlet weak var nameview: UIView!
+    
     var strName = String()
     var strEmail = String()
     var strMob = String()
@@ -48,12 +51,29 @@ class ProfileEditviewController: UIViewController {
     var strCity = String()
     var strGender = String()
     
+//    let scrollView: UIScrollView = {
+//        let v = UIScrollView()
+//        v.translatesAutoresizingMaskIntoConstraints = false
+//        v.backgroundColor = .cyan
+//        return v
+//    }()
     
     var myPickerView : UIPickerView!
     var pickerData = ["Male" , "Female" , "Other"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // add the scroll view to self.view
+//                self.view.addSubview(scrollView)
+//
+//                // constrain the scroll view to 8-pts on each side
+//                scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+//                scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
+//                scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+//                scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8.0).isActive = true
+//
+//        scrollView.addSubview(nameview)
+        
         setDefault()
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.SearchState), name: NSNotification.Name(rawValue: "SearchingState"), object: nil)
