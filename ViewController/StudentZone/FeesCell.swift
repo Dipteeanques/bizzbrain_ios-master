@@ -10,6 +10,16 @@ import UIKit
 
 class FeesCell: UITableViewCell {
 
+    
+    @IBOutlet weak var lbl_feestitle1: UILabel!
+    @IBOutlet weak var lbl_fees1: UILabel!
+    
+    @IBOutlet weak var lbl_feestitle2: UILabel!
+    
+    @IBOutlet weak var lbl_duedate: UILabel!
+    
+    @IBOutlet weak var lbl_fees2: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,3 +32,5 @@ class FeesCell: UITableViewCell {
     }
 
 }
+
+

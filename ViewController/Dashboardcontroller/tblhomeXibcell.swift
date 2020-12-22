@@ -21,6 +21,7 @@ class tblhomeXibcell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     var arrMainCategory = NSArray()
     var url: URL?
     var delegete: selectedIndexDelegete?
+    var arr2 = NSArray()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,16 +36,16 @@ class tblhomeXibcell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return arrMainCategory.count
 //        let arr = arrMainCategory[collectionView.tag]
-      let arr2 = (arrMainCategory[collectionView.tag]as AnyObject).value(forKey: "main_category")as! NSArray
+       arr2 = (arrMainCategory[collectionView.tag]as AnyObject).value(forKey: "main_category")as! NSArray
         return arr2.count//.listFlowStatus.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewID", for: indexPath)as! CollectionlistCell
-        if indexPath.row >= self.arrMainCategory.count
-        {
-            return cell
-        }
+//        if indexPath.row >= self.arrMainCategory.count
+//        {
+//            return cell
+//        }
         let positionNow = (arrMainCategory[collectionView.tag]as AnyObject).value(forKey: "main_category")as! NSArray
         print("tag:",collectionView.tag)
         print("indexPath:",indexPath.row)
@@ -77,7 +78,9 @@ class tblhomeXibcell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
         return CGSize(width: width, height: width)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegete?.selectedDel(index: indexPath.row, Maincategoryarr: self.arrMainCategory)
+        print(indexPath.row)
+        print(indexPath.section)
+        delegete?.selectedDel(index: indexPath.row, Maincategoryarr: self.arr2)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

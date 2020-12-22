@@ -117,9 +117,11 @@ extension DateSheetViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as! tblDatesheetCell
         cell.lblTitle.text = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "name")as? String
-        let date = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "start_date")as? String
-        let result = date!.filter { !$0.isNewline && !$0.isWhitespace }
-        cell.lblDate.text = result
+        cell.lblDate.text = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "start_date")as? String
+//        print("date",date)
+//        let result = date!.filter { !$0.isNewline && !$0.isWhitespace }
+//        print("result:",result)
+//        cell.lblDate.text = result
         return cell
     }
     

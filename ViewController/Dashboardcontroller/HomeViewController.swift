@@ -193,7 +193,7 @@ class HomeViewController: UIViewController,selectedIndexDelegete {
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "AddCatSubcategorycontroller")as! AddCatSubcategorycontroller
         obj.category_id = cat_id!
         obj.strTitle = Title!
-        obj.strImage = strimage!
+        obj.strImage = strimage ?? ""
         self.navigationController?.pushViewController(obj, animated: true)
     }
     
@@ -273,14 +273,17 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblMain.dequeueReusableCell(withIdentifier: "tblhomeXibcell", for: indexPath) as! tblhomeXibcell
-        cell.collectionView.tag = indexPath.row
+
         cell.collectionView.register(UINib(nibName: "CollectionlistCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewID")
         cell.lblTitle.text = (self.base_category[indexPath.row]as AnyObject).value(forKey: "title")as? String
         cell.btnAll.addTarget(self, action: #selector(btnAllAction), for: .touchUpInside)
         print("base_category:",self.base_category[indexPath.row])
-//        cell.arrMainCategory = (self.base_category[indexPath.row]as AnyObject).value(forKey: "main_category")as! NSArray
+        cell.collectionView.tag = indexPath.row
         cell.arrMainCategory = base_category
         cell.delegete = self
+        cell.collectionView.reloadData()
+//        cell.arrMainCategory = (self.base_category[indexPath.row]as AnyObject).value(forKey: "main_category")as! NSArray
+        
         return cell
     }
     

@@ -18,8 +18,6 @@ class LoginviewController: UIViewController {
     @IBOutlet weak var forgotTop: NSLayoutConstraint!
     @IBOutlet weak var loginTop: NSLayoutConstraint!
     @IBOutlet weak var logSocialTop: NSLayoutConstraint!
-    @IBOutlet weak var facebookTop: NSLayoutConstraint!
-    @IBOutlet weak var loginmobileTop: NSLayoutConstraint!
     @IBOutlet weak var cardTop: NSLayoutConstraint!
     
     //MARK: Height
@@ -29,13 +27,20 @@ class LoginviewController: UIViewController {
     
     
     @IBOutlet weak var activity: UIActivityIndicatorView!
-    @IBOutlet weak var btnFaceBook: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var lblPassword: UILabel!
     
+    @IBOutlet weak var btnsignup: UIButton!{
+        didSet{
+            btnsignup.layer.cornerRadius = 5
+            btnsignup.clipsToBounds = true
+            btnsignup.layer.borderColor = UIColor.red.cgColor
+            btnsignup.layer.borderWidth = 1.0
+        }
+    }
     @IBOutlet weak var fbActivity: UIActivityIndicatorView!
     let appDel = UIApplication.shared.delegate as! AppDelegate
     
@@ -86,7 +91,7 @@ class LoginviewController: UIViewController {
             forgotTop.constant = 12
             loginTop.constant = 12
             logSocialTop.constant = 20
-            facebookTop.constant = 20
+//            facebookTop.constant = 20
             cardTop.constant = 30
             locnHeight.constant = 85
         }
@@ -106,7 +111,7 @@ class LoginviewController: UIViewController {
                 forgotTop.constant = 12
                 loginTop.constant = 12
                 logSocialTop.constant = 20
-                facebookTop.constant = 20
+//                facebookTop.constant = 20
                 cardTop.constant = 40
                 locnHeight.constant = 95
             }
@@ -121,8 +126,8 @@ class LoginviewController: UIViewController {
         }
         btnLogin.layer.cornerRadius = 5
         btnLogin.clipsToBounds = true
-        btnFaceBook.layer.cornerRadius = 5
-        btnFaceBook.clipsToBounds = true
+//        btnFaceBook.layer.cornerRadius = 5
+//        btnFaceBook.clipsToBounds = true
     }
     
     func login() {
@@ -221,7 +226,7 @@ class LoginviewController: UIViewController {
     func loginWithFacebook(strFB_id: String,strName: String) {
         fbActivity.isHidden = false
         fbActivity.startAnimating()
-        btnFaceBook.setTitle(" ", for: .normal)
+//        btnFaceBook.setTitle(" ", for: .normal)
         let param = ["facebook_id":strFB_id]
         let headers: HTTPHeaders = ["Xapi": Xapi]
         
@@ -270,7 +275,7 @@ class LoginviewController: UIViewController {
                         self.appDel.gotoTabbar()
                         self.fbActivity.isHidden = true
                         self.fbActivity.stopAnimating()
-                        self.btnFaceBook.setTitle("Facebook", for: .normal)
+//                        self.btnFaceBook.setTitle("Facebook", for: .normal)
                     }
                     else {
                         let obj = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController")as! SignupViewController
@@ -279,7 +284,7 @@ class LoginviewController: UIViewController {
                         self.navigationController?.pushViewController(obj, animated: true)
                         self.fbActivity.isHidden = true
                         self.fbActivity.stopAnimating()
-                        self.btnFaceBook.setTitle("Facebook", for: .normal)
+//                        self.btnFaceBook.setTitle("Facebook", for: .normal)
                     }
                     
                 }
@@ -290,7 +295,7 @@ class LoginviewController: UIViewController {
                         self.dismiss(animated: true, completion: nil)
                         self.fbActivity.isHidden = true
                         self.fbActivity.stopAnimating()
-                        self.btnFaceBook.setTitle("Facebook", for: .normal)
+//                        self.btnFaceBook.setTitle("Facebook", for: .normal)
                     }))
                 }
         }

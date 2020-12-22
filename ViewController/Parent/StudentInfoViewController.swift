@@ -154,7 +154,7 @@ extension StudentInfoViewController: UITableViewDelegate,UITableViewDataSource,M
         else {
             cell.btnIcon.isHidden = true
         }
-        
+        cell.btnIcon.tintColor = redcolor
         cell.btnIcon.addTarget(self, action: #selector(self.btnIconAction), for: .touchUpInside)
         return cell
     }

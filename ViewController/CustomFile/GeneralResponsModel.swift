@@ -200,7 +200,7 @@ struct testModelset: Decodable {
     let description: String
     let image: String
     let is_exam_questions: Int
-    let photo300x300: String
+    let photo300x200: String
     let is_done: Int
 }
 
@@ -352,3 +352,72 @@ struct subjectModel: Decodable {
     let name: String
 }
 
+
+
+//MARK: FeesDetailResponsModdel
+struct RootClass: Codable {
+
+    let success: Bool
+    let data: FeesData
+    let message: String
+
+}
+
+struct FeesData: Codable {
+
+    let id: Int
+    let total_fees: Int
+    let remain_fees: Int
+    let fees_types: [FeesTypes]
+    let fees_dues: [FeesDues]
+
+}
+
+struct FeesTypes: Codable {
+
+    let id: Int
+    let fees_structure_id: Int
+    let title: String
+    let fees: Int
+
+}
+
+struct FeesDues: Codable {
+
+    let id: Int
+    let fees_structure_id: Int
+    let due_date: String
+    let pay_fees: Int
+    let title: String
+
+}
+
+
+//MARK: FeesPaymentHistoryResponsModdel
+struct PaymentHistoryRoot: Codable {
+
+    let success: Bool
+    let data: [HistoryData]
+    let message: String
+
+}
+
+struct HistoryData: Codable {
+
+    let id: Int
+    let school_id: Int
+    let academic_year_id: Int
+    let s_standard_id: Int
+    let s_class_room_id: Int
+    let invoice_number: String
+    let student_id: Int
+    let remark: String
+    let total_fees: Int
+    let receive_by: Int
+    let invoice_url: String
+    let payment_response: String
+    let created_at: String
+    let updated_at: String
+    let invoice_full_url: String
+
+}

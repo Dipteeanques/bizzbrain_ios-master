@@ -215,6 +215,7 @@ class tblTimetableCell: UITableViewCell {
     @IBOutlet weak var imageSubject: UIImageView! {
         didSet {
             imageSubject.layer.cornerRadius = imageSubject.frame.size.width / 2
+            imageSubject.clipsToBounds = true
         }
     }
     

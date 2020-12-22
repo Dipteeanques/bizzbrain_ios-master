@@ -78,7 +78,9 @@ class loginWithStudentViewController: UIViewController {
                          "password":txtConfirm.text!,
                          "device_token":FCMToken,
                          "device_type":"ios"]
+            print(param)
             let headers: HTTPHeaders = ["Xapi": Xapi]
+            print(headers)
             AF.request(LOGIN, method: .post, parameters: param, encoding: JSONEncoding.default,headers: headers)
                 .responseJSON { response in
                     print(response)
@@ -97,12 +99,22 @@ class loginWithStudentViewController: UIViewController {
                         let name = data.value(forKey: "name")as! String
                         let email = data.value(forKey: "email")as! String
                         let token = data.value(forKey: "token")as! String
+                        let profile = data.value(forKey: "profile")as! String
+                        let classs = data.value(forKey: "class")as! String
+                        let standard = data.value(forKey: "standard")as! String
+                        let school_logo = data.value(forKey:"school_logo")as! String
+                        let user_id = data.value(forKey: "user_id")as! Int
                         let FinalToken = "Bearer " + token
+                        loggdenUser.setValue(profile, forKey: PROFILEMAIN)
+                        loggdenUser.setValue(classs, forKey: CLASS)
+                        loggdenUser.setValue(standard, forKey: STANDARD)
                         loggdenUser.set(role_id, forKey: ROLE_ID)
                         loggdenUser.set(true, forKey: STUDENT_ISLOGIN)
                         loggdenUser.set(name, forKey: NAME)
                         loggdenUser.set(email, forKey: EMAIL)
                         loggdenUser.set(FinalToken, forKey: TOKEN)
+                        loggdenUser.setValue(school_logo, forKey: SCHOOL_LOGO)
+                        loggdenUser.setValue(user_id, forKey: USER_ID)
                         self.appDel.gotoStudent()
                         self.activity.isHidden = true
                         self.activity.stopAnimating()

@@ -57,6 +57,7 @@ class DressVendorViewController: UIViewController {
     
     func DresvendorAPI() {
         let parameters = ["student_id": student_id]
+        print("dress:",parameters)
         
         let token = loggdenUser.value(forKey: TOKEN)as! String
         let headers: HTTPHeaders = ["Xapi": Xapi,
@@ -73,10 +74,23 @@ class DressVendorViewController: UIViewController {
                     let data = json.value(forKey: "data")as! NSDictionary
                     let first = data.value(forKey: "dress_uniform_details")as! String
                     let second = data.value(forKey: "fancy_dress")as! String
-                    self.arrVendor.append(DressVendor.init(title: "School Dress uniform details", Descrip: first))
-                    self.arrVendor.append(DressVendor.init(title: "Fancy Dress details", Descrip: second))
-                    self.tblView.reloadData()
-                    
+                    if second.isEmpty{
+                        self.activityIndicator.stopAnimating()
+                        self.activityIndicator.isHidden = true
+                        let noDataLabel: UILabel  = UILabel(frame: CGRect(x: 0, y: 0, width: self.tblView.bounds.size.width, height: self.tblView.bounds.size.height))
+                        noDataLabel.text          = "No Dress Vendors Details added."
+                        noDataLabel.textColor     = UIColor.black
+                        noDataLabel.textAlignment = .center
+                        self.tblView.backgroundView  = noDataLabel
+                        self.tblView.separatorStyle  = .none
+                    }
+                    else{
+                        self.arrVendor.append(DressVendor.init(title: "School Dress uniform details", Descrip: first))
+                        self.arrVendor.append(DressVendor.init(title: "Fancy Dress details", Descrip: second))
+                        self.tblView.reloadData()
+                        
+                    }
+
                 }
                 else {
                     self.activityIndicator.stopAnimating()

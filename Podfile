@@ -13,4 +13,5 @@ target 'bizzbrains' do
  pod 'Crashlytics', '~> 3.14.0'
  pod 'ReachabilitySwift'
  pod 'SwiftyStoreKit'
+ pod 'DKImagePickerController'
 end

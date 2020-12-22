@@ -12,4 +12,11 @@ class IconCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet var colorview: UIView!{
+        didSet{
+            colorview.layer.cornerRadius = 5
+            colorview.clipsToBounds = true
+        }
+    }
 }

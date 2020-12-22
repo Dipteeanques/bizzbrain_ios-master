@@ -8,8 +8,8 @@
 
 import Foundation
 
-let Domain           =       "https://bizzbrains.com/api/v1/"
-//let Domain           =       "http://192.168.0.30/elearning/api/v2/"
+let Domain           =      "https://www.bizzbrains.com/api/v1/"// "http://bizzbrains.com/api/v1/"//"https://bizzbrains.com/api/v1/"
+//let Domain         =       "http://192.168.0.30/elearning/api/v2/"
 
 let Xapi             =       "jwZryAdcrffggf867DnjhjhfRvsfhjs5667"
 
@@ -83,6 +83,8 @@ let OLDERASSIGNMENT      = Domain + "old_assignments"
 let HELP_DESK              =  Domain + "help_desk"
 let STUDENTS_INFO          =  Domain + "students_info"
 
+let CHANGEPROFILE          = Domain + "changeProfile"
+
 let EVENT                  =  Domain + "event"
 let EXAM_RESULTS           =  Domain + "exam_results"
 let EXAM_RESULT_DETAIL     =  Domain + "exam_result_detail"
@@ -105,6 +107,9 @@ let get_subject = Domain + "get_subject"
 let instructor = Domain + "instructor"
 let GetInstructorMainCategory = Domain + "GetInstructorMainCategory"
 
+let get_fessdetail = Domain + "get_fees_details"
+let get_fees_payment_history = Domain + "get_fees_payment_history"
+
 
 func generateCustomerID() -> String
 {
@@ -126,6 +131,7 @@ let PARENT_ISLOGIN    = "PARENT_ISLOGIN"
 let STUDENT_ISLOGIN   = "STUDENT_ISLOGIN"
 
 
+
 let COLLEGE_NAME      = "COLLEGE_NAME"
 let SCHOOL_NAME       = "SCHOOL_NAME"
 let USERNAME          = "USERNAME"
@@ -142,8 +148,12 @@ let CITYLog           = "CITY"
 let PROFILE_IMAGE     = "profile"
 let SCHOOL_LOGO       = "school_logo"
 let STUDENT_ID        = "STUDENT_ID"
+let USER_ID           = "USER_ID"
 
 let all_Ids = "all_Ids"
 
 
+let PROFILEMAIN = "profile1"
+let CLASS = "class"
+let STANDARD = "standard"
 

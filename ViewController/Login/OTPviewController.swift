@@ -116,6 +116,7 @@ class OTPviewController: UIViewController {
                             loggdenUser.set(name, forKey: NAME)
                             loggdenUser.set(FinalToken, forKey: TOKEN)
                             loggdenUser.set(id, forKey: STUDENT_ID)
+                            loggdenUser.set(0, forKey: ROLE_ID)
                             self.appDel.gotoParent()
                             self.activity.isHidden = true
                             self.activity.stopAnimating()

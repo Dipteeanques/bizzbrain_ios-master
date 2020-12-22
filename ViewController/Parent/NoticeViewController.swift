@@ -13,13 +13,15 @@ class NoticeViewController: UIViewController {
 
     @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var tblView: UITableView!
+    var flag = ""
     
     var url: URL?
     var arrFilterSearchDatum = [FilterSearchDatum]()
     var student_id = Int()
-    var arrNotice = NSArray()
+    var arrNotice = NSMutableArray()
     let activityIndicator = UIActivityIndicatorView()
     let appDel = UIApplication.shared.delegate as! AppDelegate
+    var pagecount = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,7 @@ class NoticeViewController: UIViewController {
         if (loggdenUser.value(forKey: STUDENT_ID) != nil) {
             student_id = loggdenUser.value(forKey: STUDENT_ID)as! Int
         }
-        noticeAPI()
+        noticeAPI(page: pagecount, strcheck: false)
         if loggdenUser.value(forKey: PROFILE_IMAGE) != nil {
             let proimage = loggdenUser.value(forKey: PROFILE_IMAGE)as! String
             url = URL(string: proimage)
@@ -50,8 +52,9 @@ class NoticeViewController: UIViewController {
         }
     }
     
-    func noticeAPI() {
-        let parameters = ["student_id": student_id]
+    func noticeAPI(page:Int,strcheck:Bool) {
+        let parameters = ["student_id": student_id,"page":page]
+        print("parameters:",parameters)
         
         let token = loggdenUser.value(forKey: TOKEN)as! String
         let headers: HTTPHeaders = ["Xapi": Xapi,
@@ -66,8 +69,17 @@ class NoticeViewController: UIViewController {
                 let message = json.value(forKey: "message")as! String
                 if sucess == true {
                     let data = json.value(forKey: "data")as! NSDictionary
-                    self.arrNotice = data.value(forKey: "data")as! NSArray
+                   
+                    if strcheck == true{
+                        let arr = data.value(forKey: "data")
+                        self.arrNotice.addObjects(from: arr as! [Any])//adding(arr!)
+                    }
+                    else {
+                        let arr = data.value(forKey: "data") as! NSArray
+                        self.arrNotice = arr.mutableCopy() as! NSMutableArray//as! NSArray
+                    }
                     self.tblView.reloadData()
+                    self.flag = ""
                 }
                 else {
                     self.activityIndicator.stopAnimating()
@@ -130,6 +142,30 @@ extension NoticeViewController: UITableViewDelegate,UITableViewDataSource {
         }
         else{
             appDel.gotoParent()
+        }
+    }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if indexPath.row + 1 == arrNotice.count {
+//            print("do something")
+//            self.pagecount = self.pagecount + 1
+//            self.noticeAPI(page: self.pagecount)
+//        }
+//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offset = scrollView.contentOffset
+        let bounds = scrollView.bounds
+        let size = scrollView.contentSize
+        let inset = scrollView.contentInset
+        let y = offset.y + bounds.size.height - inset.bottom
+        let h = size.height
+        let reload_distance:CGFloat = 10.0
+        if y > (h + reload_distance) {
+            print("load more rows")
+            if flag == ""{
+                flag = "ok"
+            self.pagecount = self.pagecount + 1
+                self.noticeAPI(page: self.pagecount, strcheck: true)
+            }
         }
     }
 }

@@ -87,6 +87,9 @@ extension HelpDeskViewController: UITableViewDelegate,UITableViewDataSource,MFMa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblMain.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as! HelpDeskTableViewCell
+    
+//        let image = UIImage(named: "image_name")?.withRenderingMode(.alwaysTemplate)
+
         cell.lblTitle.text = helpDaskDic[indexPath.row].title
         if cell.lblTitle.text == "School Email Address" {
             cell.btnIcon.setImage(#imageLiteral(resourceName: "icons8-new-post-100"), for: .normal)
@@ -95,10 +98,13 @@ extension HelpDeskViewController: UITableViewDelegate,UITableViewDataSource,MFMa
         else if cell.lblTitle.text == "School Mobile no." {
             cell.btnIcon.setImage(#imageLiteral(resourceName: "icons8-phone-96"), for: .normal)
             cell.btnIcon.isHidden = false
+//            button.setImage(image, for: .normal)
+           
         }
         else {
             cell.btnIcon.isHidden = true
         }
+        cell.btnIcon.tintColor = redcolor
         cell.lblDesc.text = helpDaskDic[indexPath.row].Description
         cell.btnIcon.addTarget(self, action: #selector(self.btnIconAction), for: .touchUpInside)
         return cell

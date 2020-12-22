@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,10 @@
 		5B7AA18D23EF9D6B002CB663 /* EventResponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AA18C23EF9D6B002CB663 /* EventResponModel.swift */; };
 		5B7AA18F23F08382002CB663 /* TransportdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AA18E23F08382002CB663 /* TransportdetailsViewController.swift */; };
 		5BE423B923FF632900A3A258 /* SubscribeIdResponsmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE423B823FF632900A3A258 /* SubscribeIdResponsmodel.swift */; };
+		8F072A2725877F7D00E4CD96 /* FeesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */; };
+		8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */; };
+		8F10DFC22589D71C00A3FFB1 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */; };
+		8FCF49AA2588C8F700530B3F /* FeesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF49A92588C8F700530B3F /* FeesCell.swift */; };
 		CC34F4815C8E5879CEF12550 /* Pods_bizzbrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */; };
 		DA011237232B481200B1D983 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA011236232B481200B1D983 /* SearchingViewController.swift */; };
 		DA11501D2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11501C2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift */; };
@@ -154,6 +158,7 @@
 		DAFA8E19233A402800BF118B /* QuestionTypeTextImageoptionTxtcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFA8E17233A402800BF118B /* QuestionTypeTextImageoptionTxtcell.xib */; };
 		DAFA8E1E233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA8E1C233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.swift */; };
 		DAFA8E1F233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFA8E1D233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.xib */; };
+		FFB908342582625900F405BF /* StudentZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB908332582625800F405BF /* StudentZoneCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +235,10 @@
 		5BE423B823FF632900A3A258 /* SubscribeIdResponsmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeIdResponsmodel.swift; sourceTree = "<group>"; };
 		65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bizzbrains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7257EE863F3A8C63950C1546 /* Pods-bizzbrains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.release.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.release.xcconfig"; sourceTree = "<group>"; };
+		8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesDetailsVC.swift; sourceTree = "<group>"; };
+		8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryVC.swift; sourceTree = "<group>"; };
+		8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
+		8FCF49A92588C8F700530B3F /* FeesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCell.swift; sourceTree = "<group>"; };
 		D8DF3F529A469DA03AD2FF5B /* Pods-bizzbrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.debug.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.debug.xcconfig"; sourceTree = "<group>"; };
 		DA011236232B481200B1D983 /* SearchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 		DA11501C2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblPaymentHistoryCell.swift; sourceTree = "<group>"; };
@@ -343,6 +352,7 @@
 		DAFA8E17233A402800BF118B /* QuestionTypeTextImageoptionTxtcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTypeTextImageoptionTxtcell.xib; sourceTree = "<group>"; };
 		DAFA8E1C233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTypeText_Image_optionType_Imagecell.swift; sourceTree = "<group>"; };
 		DAFA8E1D233A43CC00BF118B /* QuestionTypeText_Image_optionType_Imagecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTypeText_Image_optionType_Imagecell.xib; sourceTree = "<group>"; };
+		FFB908332582625800F405BF /* StudentZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentZoneCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +426,11 @@
 				DAAB948E241D3FBA001AC0F8 /* ImageViewViewController.swift */,
 				DAAB9490241D4434001AC0F8 /* ImagelistCollectionViewCell.swift */,
 				DA3806C0246031090032AE71 /* VideoResponseModel.swift */,
+				FFB908332582625800F405BF /* StudentZoneCell.swift */,
+				8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */,
+				8FCF49A92588C8F700530B3F /* FeesCell.swift */,
+				8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */,
+				8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */,
 			);
 			path = StudentZone;
 			sourceTree = "<group>";
@@ -842,36 +857,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -938,6 +928,7 @@
 				5B5FEDC523EC799F009EFDD0 /* ExamResultViewController.swift in Sources */,
 				DAAB948F241D3FBA001AC0F8 /* ImageViewViewController.swift in Sources */,
 				DAE8CC4F2330E6160068B0EC /* ResultHistoryViewcontroller.swift in Sources */,
+				8F10DFC22589D71C00A3FFB1 /* PaymentHistoryCell.swift in Sources */,
 				5B584C7B23CF452800F4D8D3 /* loginWithStudentViewController.swift in Sources */,
 				DAEACD59232F801F00F44EE3 /* tblCartsummeryCell.swift in Sources */,
 				5B5FEDC123EB33B3009EFDD0 /* EventDetailsViewController.swift in Sources */,
@@ -960,6 +951,7 @@
 				DAE8E0DA234619BE00B466DC /* QuestionTypeImageAnsWebCell.swift in Sources */,
 				DAE8DA44232CF840000CE41B /* SearchEleraningController.swift in Sources */,
 				DAE8E0D62346019A00B466DC /* QuestionTypeText_imageAnsWeboptionCell.swift in Sources */,
+				8F072A2725877F7D00E4CD96 /* FeesDetailsVC.swift in Sources */,
 				5B60810C240440AA004BCEEB /* subCategetResponsModel.swift in Sources */,
 				DAAB9493241D4957001AC0F8 /* VideolistViewController.swift in Sources */,
 				5B5E397B23E7301A00445013 /* AssignmentViewController.swift in Sources */,
@@ -982,6 +974,7 @@
 				5B5E397F23E7393200445013 /* HelpDeskTableViewCell.swift in Sources */,
 				5B5FEDC323EC7023009EFDD0 /* DressVendorViewController.swift in Sources */,
 				DA477F8A2328F864002A2ECC /* Webservice.swift in Sources */,
+				8FCF49AA2588C8F700530B3F /* FeesCell.swift in Sources */,
 				5B624B6E23DC57C00023E8D3 /* CollectionSubscriberCell.swift in Sources */,
 				DAA6ECC62356E5560001A69C /* CUIView.swift in Sources */,
 				DAE8CBFE233097EA0068B0EC /* tblDocumentlistCell.swift in Sources */,
@@ -1012,6 +1005,7 @@
 				5B5838BF23E878D600200FB4 /* DateSheetViewController.swift in Sources */,
 				DA477F822328E755002A2ECC /* SignupViewController.swift in Sources */,
 				DAEACD61232FB67F00F44EE3 /* tblTopicCell.swift in Sources */,
+				8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */,
 				5B5E397923E72FAE00445013 /* AssignmentResponsModel.swift in Sources */,
 				DAE97AAC23543B92009E52C3 /* PinterestLayout.swift in Sources */,
 				5B5E396F23E69B0000445013 /* StudentSelectionViewController.swift in Sources */,
@@ -1024,6 +1018,7 @@
 				5B2DF0DE23E0AAC2003005B8 /* ParentViewController.swift in Sources */,
 				DAE8DA49232D0DAA000CE41B /* AddCategoryViewController.swift in Sources */,
 				DAE55AF8233CD3E40099FAF3 /* tblTestListCell.swift in Sources */,
+				FFB908342582625900F405BF /* StudentZoneCell.swift in Sources */,
 				DAEAF977233B226300699B67 /* QuestionType_Image_optionType_ImageCell.swift in Sources */,
 				DAAB9495241D4B2F001AC0F8 /* VideoListresponseModel.swift in Sources */,
 				DAA6ECC42355E4D40001A69C /* CategoryAddSubMainController.swift in Sources */,
@@ -1225,7 +1220,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1;
+				CURRENT_PROJECT_VERSION = 3.5;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1241,6 +1236,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
+				MARKETING_VERSION = 1.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",
@@ -1297,7 +1293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1;
+				CURRENT_PROJECT_VERSION = 3.5;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1313,6 +1309,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
+				MARKETING_VERSION = 1.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",

@@ -117,9 +117,9 @@ extension SecondaryExamDetailsViewController: UITableViewDelegate,UITableViewDat
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as! tblSecondExamCell
         cell.lblTitle.text = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "subjects_name")as? String
         cell.lblTime.text = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "time")as? String
-        let date = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "start_date")as? String
-        let result = date!.filter { !$0.isNewline && !$0.isWhitespace }
-        cell.lblDate.text = result
+        cell.lblDate.text = (self.arrDatesheet[indexPath.row]as AnyObject).value(forKey: "start_date")as? String
+//        let result = date!.filter { !$0.isNewline && !$0.isWhitespace }
+//        cell.lblDate.text = result
         return cell
     }
     

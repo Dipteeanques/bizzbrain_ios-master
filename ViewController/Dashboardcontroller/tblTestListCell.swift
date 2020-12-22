@@ -27,7 +27,7 @@ class tblTestListCell: UITableViewCell {
         didSet {
             lblTitle.text = Document?.title
             lblDiscription.text = Document?.description
-            let strimage = Document!.photo300x300
+            let strimage = Document!.image
             url = URL(string: strimage)
             img.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "placeholder"), options: [], completed: nil)
             img.hideSkeleton()
