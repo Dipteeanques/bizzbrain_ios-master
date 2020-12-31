@@ -96,10 +96,10 @@ class IAPurchaceViewController: UIViewController, UITableViewDelegate, UITableVi
         AF.request(GET_PRICE_CATEGORY, method: .post, parameters: parem, encoding: JSONEncoding.default,headers: headers)
                    .responseJSON { response in
                     print(response)
-            let json = response.value as! NSDictionary
-            let sucess = json.value(forKey: "success")as! Bool
+            let json = response.value as? NSDictionary
+                    let sucess = json?.value(forKey: "success")as! Bool
             if sucess == true {
-                let jsondata = json.value(forKey: "data")as! NSDictionary
+                let jsondata = json?.value(forKey: "data")as! NSDictionary
                 self.arrPricecodeList = jsondata.value(forKey: "price_list") as! NSArray
                 for i in 0..<self.arrPricecodeList.count {
                     let title = (self.arrPricecodeList[i] as AnyObject).value(forKey: "name")as! String

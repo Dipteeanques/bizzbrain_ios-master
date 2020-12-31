@@ -421,3 +421,41 @@ struct HistoryData: Codable {
     let invoice_full_url: String
 
 }
+
+//MARK: GetUpcomingMeetingResponsModdel
+struct UpcomingMeetingRoot: Codable {
+
+    let success: Bool
+    let data: UpcomingMeetingData
+    let message: String
+
+}
+
+
+struct UpcomingMeetingData: Codable {
+
+    let current_page: Int
+    let data: [UpcomingMeetingSubData]
+    let first_page_url: String
+    let from: Int
+    let last_page: Int
+    let last_page_url: String
+    let next_page_url: String
+    let path: String
+    let per_page: Int
+    let prev_page_url: String
+    let to: Int
+    let total: Int
+    
+}
+
+struct UpcomingMeetingSubData: Codable {
+
+    let id: Int
+    let title: String
+    let date_time: String
+    let url: String
+    let summary: String
+    let date_type: String
+    
+}

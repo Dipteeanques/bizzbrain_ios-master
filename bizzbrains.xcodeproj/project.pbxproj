@@ -51,6 +51,11 @@
 		8F072A2725877F7D00E4CD96 /* FeesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */; };
 		8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */; };
 		8F10DFC22589D71C00A3FFB1 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */; };
+		8F4C9C8A259C5BE600F6A7C3 /* upcomingMeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C89259C5BE600F6A7C3 /* upcomingMeetingsVC.swift */; };
+		8F4C9C8E259C605000F6A7C3 /* MeteetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */; };
+		8F4C9C92259C606C00F6A7C3 /* OlderMeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */; };
+		8F4C9CBB259C621400F6A7C3 /* VideoConferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */; };
+		8F7F17392594663600825718 /* ConversationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F17382594663600825718 /* ConversationsVC.swift */; };
 		8FCF49AA2588C8F700530B3F /* FeesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF49A92588C8F700530B3F /* FeesCell.swift */; };
 		CC34F4815C8E5879CEF12550 /* Pods_bizzbrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */; };
 		DA011237232B481200B1D983 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA011236232B481200B1D983 /* SearchingViewController.swift */; };
@@ -238,6 +243,11 @@
 		8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesDetailsVC.swift; sourceTree = "<group>"; };
 		8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryVC.swift; sourceTree = "<group>"; };
 		8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
+		8F4C9C89259C5BE600F6A7C3 /* upcomingMeetingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upcomingMeetingsVC.swift; sourceTree = "<group>"; };
+		8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteetingCell.swift; sourceTree = "<group>"; };
+		8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlderMeetingsVC.swift; sourceTree = "<group>"; };
+		8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConferenceVC.swift; sourceTree = "<group>"; };
+		8F7F17382594663600825718 /* ConversationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsVC.swift; sourceTree = "<group>"; };
 		8FCF49A92588C8F700530B3F /* FeesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCell.swift; sourceTree = "<group>"; };
 		D8DF3F529A469DA03AD2FF5B /* Pods-bizzbrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.debug.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.debug.xcconfig"; sourceTree = "<group>"; };
 		DA011236232B481200B1D983 /* SearchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
@@ -431,6 +441,11 @@
 				8FCF49A92588C8F700530B3F /* FeesCell.swift */,
 				8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */,
 				8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */,
+				8F7F17382594663600825718 /* ConversationsVC.swift */,
+				8F4C9C89259C5BE600F6A7C3 /* upcomingMeetingsVC.swift */,
+				8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */,
+				8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */,
+				8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */,
 			);
 			path = StudentZone;
 			sourceTree = "<group>";
@@ -916,6 +931,7 @@
 			files = (
 				DAE8CC4B2330E4490068B0EC /* HistoryViewcontroller.swift in Sources */,
 				DA477F9023290F00002A2ECC /* CategoriesViewcontroller.swift in Sources */,
+				8F4C9CBB259C621400F6A7C3 /* VideoConferenceVC.swift in Sources */,
 				5B593BF023EDC32C00311DD6 /* TimetableViewController.swift in Sources */,
 				DAE8DA4B232D0DC0000CE41B /* tblAddCatCell.swift in Sources */,
 				DA477F4D2328A9E6002A2ECC /* AppDelegate.swift in Sources */,
@@ -931,6 +947,7 @@
 				8F10DFC22589D71C00A3FFB1 /* PaymentHistoryCell.swift in Sources */,
 				5B584C7B23CF452800F4D8D3 /* loginWithStudentViewController.swift in Sources */,
 				DAEACD59232F801F00F44EE3 /* tblCartsummeryCell.swift in Sources */,
+				8F4C9C92259C606C00F6A7C3 /* OlderMeetingsVC.swift in Sources */,
 				5B5FEDC123EB33B3009EFDD0 /* EventDetailsViewController.swift in Sources */,
 				DA8B3B102339D64800743B54 /* tblResulthistoryCell.swift in Sources */,
 				DAEAF973233B1B8400699B67 /* QuestionType_image_optionType_textCell.swift in Sources */,
@@ -943,6 +960,7 @@
 				DAE8CC492330E3BA0068B0EC /* TabySegmentedControl.swift in Sources */,
 				DAF0677C241939A400523E39 /* StudentNoteViewController.swift in Sources */,
 				DAEAF983233B754B00699B67 /* QuestionTypeHTMLcell.swift in Sources */,
+				8F7F17392594663600825718 /* ConversationsVC.swift in Sources */,
 				5B7AA18D23EF9D6B002CB663 /* EventResponModel.swift in Sources */,
 				DAEB4479235DAA3200153602 /* Reachability.swift in Sources */,
 				DAEACD5F232FB54B00F44EE3 /* TopicViewController.swift in Sources */,
@@ -965,6 +983,7 @@
 				5B7AA18F23F08382002CB663 /* TransportdetailsViewController.swift in Sources */,
 				5B5E397D23E7391500445013 /* HelpDeskViewController.swift in Sources */,
 				DA2D323E232B7A02009D5EB9 /* HomeViewController.swift in Sources */,
+				8F4C9C8E259C605000F6A7C3 /* MeteetingCell.swift in Sources */,
 				DA011237232B481200B1D983 /* SearchingViewController.swift in Sources */,
 				5B58743123D4333500955FA7 /* tblhomeXibcell.swift in Sources */,
 				5BE423B923FF632900A3A258 /* SubscribeIdResponsmodel.swift in Sources */,
@@ -1005,6 +1024,7 @@
 				5B5838BF23E878D600200FB4 /* DateSheetViewController.swift in Sources */,
 				DA477F822328E755002A2ECC /* SignupViewController.swift in Sources */,
 				DAEACD61232FB67F00F44EE3 /* tblTopicCell.swift in Sources */,
+				8F4C9C8A259C5BE600F6A7C3 /* upcomingMeetingsVC.swift in Sources */,
 				8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */,
 				5B5E397923E72FAE00445013 /* AssignmentResponsModel.swift in Sources */,
 				DAE97AAC23543B92009E52C3 /* PinterestLayout.swift in Sources */,
@@ -1220,7 +1240,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.5;
+				CURRENT_PROJECT_VERSION = 3.6;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1236,7 +1256,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",
@@ -1293,7 +1313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.5;
+				CURRENT_PROJECT_VERSION = 3.6;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1309,7 +1329,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",

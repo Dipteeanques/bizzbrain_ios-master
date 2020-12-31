@@ -229,7 +229,7 @@ extension AddCatSubcategorycontroller: UICollectionViewDelegate,UICollectionView
         let title = (selected as AnyObject).value(forKey: "title") as? String
         let image = (selected as AnyObject).value(forKey: "image") as? String
 //        let topic = (selected as AnyObject).value(forKey: "topic_count") as? Int
-//        let type = (selected as AnyObject).value(forKey: "type") as? String
+        let type = (selected as AnyObject).value(forKey: "type") as? String
         let cell = collectionView.cellForItem(at: indexPath)as! catSubcatCollectionCell
         let lable = cell.lblSubscribe.text
         print(lable)
@@ -245,6 +245,7 @@ extension AddCatSubcategorycontroller: UICollectionViewDelegate,UICollectionView
             obj.cate_id = id!
             obj.strImage = image!
             obj.subcategory_type = "subcategory"
+            obj.strMonthset = type ?? ""
             self.navigationController?.pushViewController(obj, animated: true)
         }
     }

@@ -67,7 +67,7 @@ class CategoryDetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(strMonthset)
+        print("strMonthset:",strMonthset)
         setDefault()
 //        getCall()
 //        Getplan()
@@ -189,6 +189,9 @@ class CategoryDetailsController: UIViewController {
 //        else {
 //             print("jekil")
 //        }
+        if strMonthset == "Paid"{
+            btnSubscribe.setTitle("Buy now", for: .normal)
+        }
         
         lblOnline.isHidden = true
         lblPlese.isHidden = true
@@ -367,8 +370,8 @@ class CategoryDetailsController: UIViewController {
        }
     
     @IBAction func btnSubscribeAction(_ sender: UIButton) {
-        PriceZire()
-        return;
+//        PriceZire()
+//        return;
             if self.strMonthset == "Free" {
                 PriceZire()
             }

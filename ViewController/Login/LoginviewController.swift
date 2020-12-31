@@ -33,14 +33,15 @@ class LoginviewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var lblPassword: UILabel!
     
-    @IBOutlet weak var btnsignup: UIButton!{
-        didSet{
-            btnsignup.layer.cornerRadius = 5
-            btnsignup.clipsToBounds = true
-            btnsignup.layer.borderColor = UIColor.red.cgColor
-            btnsignup.layer.borderWidth = 1.0
-        }
-    }
+    @IBOutlet weak var btnsignup: UIButton!
+//    {
+//        didSet{
+//            btnsignup.layer.cornerRadius = 5
+//            btnsignup.clipsToBounds = true
+//            btnsignup.layer.borderColor = UIColor.red.cgColor
+//            btnsignup.layer.borderWidth = 1.0
+//        }
+//    }
     @IBOutlet weak var fbActivity: UIActivityIndicatorView!
     let appDel = UIApplication.shared.delegate as! AppDelegate
     

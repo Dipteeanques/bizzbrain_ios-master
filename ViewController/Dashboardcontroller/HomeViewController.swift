@@ -32,6 +32,13 @@ class HomeViewController: UIViewController,selectedIndexDelegete {
     
     @IBOutlet weak var lblCate: UILabel!
     @IBOutlet weak var lblNew: UILabel!
+    
+    @IBOutlet weak var lblinstuctor: UILabel!
+    @IBOutlet weak var btninstructor: UIButton!
+    
+//    @IBOutlet weak var viewinstructorHeight: NSLayoutConstraint!
+    
+    
     var wc = Webservice.init()
     var arrBanners = [String]()
     var arrMainCategory = NSArray()
@@ -160,7 +167,17 @@ class HomeViewController: UIViewController,selectedIndexDelegete {
                     self.pageControl.numberOfPages = self.arrBanners.count
                     self.pageControl.currentPage = 0
                     self.tblMain.reloadData()
-                     self.collectionViewInstruct.reloadData()
+                    
+                   if self.arrInstruct.count == 0{
+                    self.lblinstuctor.isHidden = true
+                    self.btninstructor.isHidden = true
+//                        self.viewinstructorHeight.constant = 0
+                    self.collectionViewInstruct.reloadData()
+                    }
+                    else{
+                        self.collectionViewInstruct.reloadData()
+                    }
+                     
                 }
                 else {
                     self.tblMain.reloadData()

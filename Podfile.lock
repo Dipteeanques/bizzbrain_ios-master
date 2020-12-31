@@ -134,6 +134,7 @@ PODS:
   - SDWebImage (5.8.0):
     - SDWebImage/Core (= 5.8.0)
   - SDWebImage/Core (5.8.0)
+  - SJSegmentedScrollView (1.5.0)
   - SkeletonView (1.8.7)
   - SwiftyGif (5.3.0)
   - SwiftyStoreKit (0.15.0)
@@ -148,6 +149,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - ReachabilitySwift
   - SDWebImage
+  - SJSegmentedScrollView
   - SkeletonView
   - SwiftyStoreKit
 
@@ -180,6 +182,7 @@ SPEC REPOS:
     - Protobuf
     - ReachabilitySwift
     - SDWebImage
+    - SJSegmentedScrollView
     - SkeletonView
     - SwiftyGif
     - SwiftyStoreKit
@@ -212,10 +215,11 @@ SPEC CHECKSUMS:
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  SJSegmentedScrollView: 67ca97389a9c3a409d3b54c88781f031f5091c61
   SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
   SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
 
-PODFILE CHECKSUM: 16252016f1cc9f71bce297a0891ac2dc12525113
+PODFILE CHECKSUM: 82b8518dc453fb82c8dca3d59be5d8baa36c0ebe
 
 COCOAPODS: 1.10.0

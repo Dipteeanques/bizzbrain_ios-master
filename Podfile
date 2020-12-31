@@ -14,4 +14,5 @@ target 'bizzbrains' do
  pod 'ReachabilitySwift'
  pod 'SwiftyStoreKit'
  pod 'DKImagePickerController'
+ pod 'SJSegmentedScrollView'
 end

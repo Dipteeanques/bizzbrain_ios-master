@@ -109,6 +109,8 @@ let GetInstructorMainCategory = Domain + "GetInstructorMainCategory"
 
 let get_fessdetail = Domain + "get_fees_details"
 let get_fees_payment_history = Domain + "get_fees_payment_history"
+let getUpcomingMeeting = Domain + "VideoMeeting/getUpcomingMeeting"
+let getOlderMeeting = Domain + "VideoMeeting/getOlderMeeting"
 
 
 func generateCustomerID() -> String
