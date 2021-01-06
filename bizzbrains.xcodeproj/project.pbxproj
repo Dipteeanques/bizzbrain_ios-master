@@ -51,13 +51,27 @@
 		8F072A2725877F7D00E4CD96 /* FeesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */; };
 		8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */; };
 		8F10DFC22589D71C00A3FFB1 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */; };
+		8F2EB46B25A46789002F46F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB46A25A46789002F46F2 /* Constants.swift */; };
+		8F2EB46F25A467B9002F46F2 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB46E25A467B9002F46F2 /* ChatVC.swift */; };
+		8F2EB47325A467E9002F46F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB47225A467E9002F46F2 /* ChatViewController.swift */; };
+		8F2EB47725A4683F002F46F2 /* BasicAudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB47625A4683F002F46F2 /* BasicAudioController.swift */; };
+		8F2EB47B25A4686A002F46F2 /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB47A25A4686A002F46F2 /* Settings+UserDefaults.swift */; };
+		8F2EB47F25A4688E002F46F2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB47E25A4688E002F46F2 /* NavigationController.swift */; };
+		8F2EB48425A468E0002F46F2 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB48325A468E0002F46F2 /* MockMessage.swift */; };
+		8F2EB48A25A46922002F46F2 /* MockSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB48925A46922002F46F2 /* MockSocket.swift */; };
+		8F2EB48E25A46944002F46F2 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB48D25A46944002F46F2 /* MockUser.swift */; };
+		8F2EB49225A46962002F46F2 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB49125A46962002F46F2 /* SampleData.swift */; };
+		8F2EB49725A46989002F46F2 /* sound2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8F2EB49525A46989002F46F2 /* sound2.m4a */; };
+		8F2EB49825A46989002F46F2 /* sound1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8F2EB49625A46989002F46F2 /* sound1.m4a */; };
+		8F2EB49C25A4699C002F46F2 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB49B25A4699C002F46F2 /* Lorem.swift */; };
+		8F2EB4A025A47422002F46F2 /* ConversationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EB49F25A47422002F46F2 /* ConversationsCell.swift */; };
 		8F4C9C8A259C5BE600F6A7C3 /* upcomingMeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C89259C5BE600F6A7C3 /* upcomingMeetingsVC.swift */; };
 		8F4C9C8E259C605000F6A7C3 /* MeteetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */; };
 		8F4C9C92259C606C00F6A7C3 /* OlderMeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */; };
 		8F4C9CBB259C621400F6A7C3 /* VideoConferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */; };
 		8F7F17392594663600825718 /* ConversationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F17382594663600825718 /* ConversationsVC.swift */; };
 		8FCF49AA2588C8F700530B3F /* FeesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF49A92588C8F700530B3F /* FeesCell.swift */; };
-		CC34F4815C8E5879CEF12550 /* Pods_bizzbrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */; };
+		B322F5F2ACE4F6E9E017914B /* Pods_bizzbrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E8C3C00B4542D9DDF65F9D /* Pods_bizzbrains.framework */; };
 		DA011237232B481200B1D983 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA011236232B481200B1D983 /* SearchingViewController.swift */; };
 		DA11501D2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11501C2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift */; };
 		DA2D323E232B7A02009D5EB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D323D232B7A02009D5EB9 /* HomeViewController.swift */; };
@@ -197,6 +211,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BE59C0147F11DC598EF0689 /* Pods-bizzbrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.debug.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.debug.xcconfig"; sourceTree = "<group>"; };
+		25B06664AA7F744942ED8EC3 /* Pods-bizzbrains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.release.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.release.xcconfig"; sourceTree = "<group>"; };
 		5B2DF0DD23E0AAC2003005B8 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		5B2DF0DF23E0AB6C003005B8 /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B5838BE23E878D600200FB4 /* DateSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSheetViewController.swift; sourceTree = "<group>"; };
@@ -238,18 +254,30 @@
 		5B7AA18C23EF9D6B002CB663 /* EventResponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponModel.swift; sourceTree = "<group>"; };
 		5B7AA18E23F08382002CB663 /* TransportdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportdetailsViewController.swift; sourceTree = "<group>"; };
 		5BE423B823FF632900A3A258 /* SubscribeIdResponsmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeIdResponsmodel.swift; sourceTree = "<group>"; };
-		65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bizzbrains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7257EE863F3A8C63950C1546 /* Pods-bizzbrains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.release.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.release.xcconfig"; sourceTree = "<group>"; };
+		67E8C3C00B4542D9DDF65F9D /* Pods_bizzbrains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bizzbrains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F072A2625877F7D00E4CD96 /* FeesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesDetailsVC.swift; sourceTree = "<group>"; };
 		8F10DFBD2589D66A00A3FFB1 /* PaymentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryVC.swift; sourceTree = "<group>"; };
 		8F10DFC12589D71C00A3FFB1 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
+		8F2EB46A25A46789002F46F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F2EB46E25A467B9002F46F2 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		8F2EB47225A467E9002F46F2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8F2EB47625A4683F002F46F2 /* BasicAudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAudioController.swift; sourceTree = "<group>"; };
+		8F2EB47A25A4686A002F46F2 /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
+		8F2EB47E25A4688E002F46F2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		8F2EB48325A468E0002F46F2 /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
+		8F2EB48925A46922002F46F2 /* MockSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSocket.swift; sourceTree = "<group>"; };
+		8F2EB48D25A46944002F46F2 /* MockUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
+		8F2EB49125A46962002F46F2 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		8F2EB49525A46989002F46F2 /* sound2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound2.m4a; sourceTree = "<group>"; };
+		8F2EB49625A46989002F46F2 /* sound1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound1.m4a; sourceTree = "<group>"; };
+		8F2EB49B25A4699C002F46F2 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		8F2EB49F25A47422002F46F2 /* ConversationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsCell.swift; sourceTree = "<group>"; };
 		8F4C9C89259C5BE600F6A7C3 /* upcomingMeetingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upcomingMeetingsVC.swift; sourceTree = "<group>"; };
 		8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteetingCell.swift; sourceTree = "<group>"; };
 		8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlderMeetingsVC.swift; sourceTree = "<group>"; };
 		8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConferenceVC.swift; sourceTree = "<group>"; };
 		8F7F17382594663600825718 /* ConversationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsVC.swift; sourceTree = "<group>"; };
 		8FCF49A92588C8F700530B3F /* FeesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCell.swift; sourceTree = "<group>"; };
-		D8DF3F529A469DA03AD2FF5B /* Pods-bizzbrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bizzbrains.debug.xcconfig"; path = "Target Support Files/Pods-bizzbrains/Pods-bizzbrains.debug.xcconfig"; sourceTree = "<group>"; };
 		DA011236232B481200B1D983 /* SearchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 		DA11501C2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblPaymentHistoryCell.swift; sourceTree = "<group>"; };
 		DA2D323D232B7A02009D5EB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -372,7 +400,7 @@
 			files = (
 				DAE732DF23421BC00025FA14 /* SystemConfiguration.framework in Frameworks */,
 				DAE8CC3F2330B71E0068B0EC /* WebKit.framework in Frameworks */,
-				CC34F4815C8E5879CEF12550 /* Pods_bizzbrains.framework in Frameworks */,
+				B322F5F2ACE4F6E9E017914B /* Pods_bizzbrains.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +474,7 @@
 				8F4C9C8D259C605000F6A7C3 /* MeteetingCell.swift */,
 				8F4C9C91259C606C00F6A7C3 /* OlderMeetingsVC.swift */,
 				8F4C9CBA259C621400F6A7C3 /* VideoConferenceVC.swift */,
+				8F2EB49F25A47422002F46F2 /* ConversationsCell.swift */,
 			);
 			path = StudentZone;
 			sourceTree = "<group>";
@@ -458,11 +487,38 @@
 			path = CatResponseModel;
 			sourceTree = "<group>";
 		};
+		8F2EB46925A46768002F46F2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8F2EB46A25A46789002F46F2 /* Constants.swift */,
+				8F2EB46E25A467B9002F46F2 /* ChatVC.swift */,
+				8F2EB47225A467E9002F46F2 /* ChatViewController.swift */,
+				8F2EB47625A4683F002F46F2 /* BasicAudioController.swift */,
+				8F2EB47A25A4686A002F46F2 /* Settings+UserDefaults.swift */,
+				8F2EB47E25A4688E002F46F2 /* NavigationController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8F2EB48225A468BD002F46F2 /* ChatModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F2EB48325A468E0002F46F2 /* MockMessage.swift */,
+				8F2EB48925A46922002F46F2 /* MockSocket.swift */,
+				8F2EB48D25A46944002F46F2 /* MockUser.swift */,
+				8F2EB49125A46962002F46F2 /* SampleData.swift */,
+				8F2EB49625A46989002F46F2 /* sound1.m4a */,
+				8F2EB49525A46989002F46F2 /* sound2.m4a */,
+				8F2EB49B25A4699C002F46F2 /* Lorem.swift */,
+			);
+			path = ChatModel;
+			sourceTree = "<group>";
+		};
 		B17B5425EA0D3B98305D69DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8DF3F529A469DA03AD2FF5B /* Pods-bizzbrains.debug.xcconfig */,
-				7257EE863F3A8C63950C1546 /* Pods-bizzbrains.release.xcconfig */,
+				0BE59C0147F11DC598EF0689 /* Pods-bizzbrains.debug.xcconfig */,
+				25B06664AA7F744942ED8EC3 /* Pods-bizzbrains.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -470,6 +526,8 @@
 		DA2D323A232B778A009D5EB9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8F2EB48225A468BD002F46F2 /* ChatModel */,
+				8F2EB46925A46768002F46F2 /* Chat */,
 				5B59957123F6317900EB0F75 /* StudentZone */,
 				5B2DF0DC23E0AAA5003005B8 /* Parent */,
 				DAEACD51232F587500F44EE3 /* Account */,
@@ -704,7 +762,7 @@
 			children = (
 				DAE9C567233F3020008E4CA1 /* SystemConfiguration.framework */,
 				DAE8CC3E2330B71E0068B0EC /* WebKit.framework */,
-				65122902C6C15DDD4CF32156 /* Pods_bizzbrains.framework */,
+				67E8C3C00B4542D9DDF65F9D /* Pods_bizzbrains.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -716,13 +774,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA477F712328A9EA002A2ECC /* Build configuration list for PBXNativeTarget "bizzbrains" */;
 			buildPhases = (
-				B7B9B76D1F2275534376DC23 /* [CP] Check Pods Manifest.lock */,
+				3363368E5375F6A3FF467D8E /* [CP] Check Pods Manifest.lock */,
 				DA477F452328A9E6002A2ECC /* Sources */,
 				DA477F462328A9E6002A2ECC /* Frameworks */,
 				DA477F472328A9E6002A2ECC /* Resources */,
-				091D753CFC195F89E744D849 /* [CP] Embed Pods Frameworks */,
 				DAE9C570233F32CA008E4CA1 /* Embed Frameworks */,
 				DAE8E0C72345AB9100B466DC /* ShellScript */,
+				4548828CE0ABF6BED45B0EC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -828,11 +886,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2EB49825A46989002F46F2 /* sound1.m4a in Resources */,
 				DA8B3B1C233A285700743B54 /* QuestiontextOptionImagecell.xib in Resources */,
 				DAE8E0D72346019A00B466DC /* QuestionTypeText_imageAnsWeboptionCell.xib in Resources */,
 				DAFA8E19233A402800BF118B /* QuestionTypeTextImageoptionTxtcell.xib in Resources */,
 				DA8B3B17233A18D400743B54 /* QuestionTextcell.xib in Resources */,
 				DAE8E0DB234619BE00B466DC /* QuestionTypeImageAnsWebCell.xib in Resources */,
+				8F2EB49725A46989002F46F2 /* sound2.m4a in Resources */,
 				DAE8E0CB2345C24F00B466DC /* QuestionHTMLAnsTextCell.xib in Resources */,
 				DAE8E0D32345F62E00B466DC /* QuestionTypeTextAnsWebviewcell.xib in Resources */,
 				DAE732D7234204C90025FA14 /* GoogleService-Info.plist in Resources */,
@@ -866,24 +926,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		091D753CFC195F89E744D849 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7B9B76D1F2275534376DC23 /* [CP] Check Pods Manifest.lock */ = {
+		3363368E5375F6A3FF467D8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -903,6 +946,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4548828CE0ABF6BED45B0EC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bizzbrains/Pods-bizzbrains-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DAE8E0C72345AB9100B466DC /* ShellScript */ = {
@@ -936,6 +996,7 @@
 				DAE8DA4B232D0DC0000CE41B /* tblAddCatCell.swift in Sources */,
 				DA477F4D2328A9E6002A2ECC /* AppDelegate.swift in Sources */,
 				5B5E398523E7456500445013 /* StudentInfoViewController.swift in Sources */,
+				8F2EB49225A46962002F46F2 /* SampleData.swift in Sources */,
 				DAEA12172341C3250035CD86 /* CategoryDetailsController.swift in Sources */,
 				DA477F882328F848002A2ECC /* GeneralResponsModel.swift in Sources */,
 				DAE8DA46232CFA09000CE41B /* tblSearchCell.swift in Sources */,
@@ -953,13 +1014,16 @@
 				DAEAF973233B1B8400699B67 /* QuestionType_image_optionType_textCell.swift in Sources */,
 				DAB1CED72457D58E00D70468 /* SubjectViewController.swift in Sources */,
 				5B61FF3123F7BEE700E87685 /* StudentSearchViewController.swift in Sources */,
+				8F2EB46F25A467B9002F46F2 /* ChatVC.swift in Sources */,
 				5B61206C24016CFD0015F06C /* NoteExamPaperViewController.swift in Sources */,
 				DA3806BD246016C20032AE71 /* AssignmentTblCell.swift in Sources */,
+				8F2EB4A025A47422002F46F2 /* ConversationsCell.swift in Sources */,
 				5B5E397723E6EFF700445013 /* AttendanceResponsModel.swift in Sources */,
 				DAE8E0CE2345ED6700B466DC /* QuestionHTMLansImagecell.swift in Sources */,
 				DAE8CC492330E3BA0068B0EC /* TabySegmentedControl.swift in Sources */,
 				DAF0677C241939A400523E39 /* StudentNoteViewController.swift in Sources */,
 				DAEAF983233B754B00699B67 /* QuestionTypeHTMLcell.swift in Sources */,
+				8F2EB47325A467E9002F46F2 /* ChatViewController.swift in Sources */,
 				8F7F17392594663600825718 /* ConversationsVC.swift in Sources */,
 				5B7AA18D23EF9D6B002CB663 /* EventResponModel.swift in Sources */,
 				DAEB4479235DAA3200153602 /* Reachability.swift in Sources */,
@@ -982,6 +1046,7 @@
 				DA477F95232913EF002A2ECC /* FreeCollectionCell.swift in Sources */,
 				5B7AA18F23F08382002CB663 /* TransportdetailsViewController.swift in Sources */,
 				5B5E397D23E7391500445013 /* HelpDeskViewController.swift in Sources */,
+				8F2EB49C25A4699C002F46F2 /* Lorem.swift in Sources */,
 				DA2D323E232B7A02009D5EB9 /* HomeViewController.swift in Sources */,
 				8F4C9C8E259C605000F6A7C3 /* MeteetingCell.swift in Sources */,
 				DA011237232B481200B1D983 /* SearchingViewController.swift in Sources */,
@@ -995,6 +1060,7 @@
 				DA477F8A2328F864002A2ECC /* Webservice.swift in Sources */,
 				8FCF49AA2588C8F700530B3F /* FeesCell.swift in Sources */,
 				5B624B6E23DC57C00023E8D3 /* CollectionSubscriberCell.swift in Sources */,
+				8F2EB48A25A46922002F46F2 /* MockSocket.swift in Sources */,
 				DAA6ECC62356E5560001A69C /* CUIView.swift in Sources */,
 				DAE8CBFE233097EA0068B0EC /* tblDocumentlistCell.swift in Sources */,
 				DA8B3B16233A18D400743B54 /* QuestionTextcell.swift in Sources */,
@@ -1006,9 +1072,11 @@
 				DAEACD55232F58DA00F44EE3 /* tblAccountCell.swift in Sources */,
 				DA477F7B2328AE10002A2ECC /* LaunchViewController.swift in Sources */,
 				5B5FEDC923EC8963009EFDD0 /* NoticeViewController.swift in Sources */,
+				8F2EB47725A4683F002F46F2 /* BasicAudioController.swift in Sources */,
 				5B619C5223F703A0003E4EF9 /* RoundedCardView.swift in Sources */,
 				DA8B3B1B233A285700743B54 /* QuestiontextOptionImagecell.swift in Sources */,
 				DAEAF97E233B623700699B67 /* ResultsViewController.swift in Sources */,
+				8F2EB46B25A46789002F46F2 /* Constants.swift in Sources */,
 				DA11501D2338EF1D00B2AB6D /* tblPaymentHistoryCell.swift in Sources */,
 				DAAB9491241D4434001AC0F8 /* ImagelistCollectionViewCell.swift in Sources */,
 				DAEACD53232F588F00F44EE3 /* AccountViewController.swift in Sources */,
@@ -1027,6 +1095,7 @@
 				8F4C9C8A259C5BE600F6A7C3 /* upcomingMeetingsVC.swift in Sources */,
 				8F10DFBE2589D66A00A3FFB1 /* PaymentHistoryVC.swift in Sources */,
 				5B5E397923E72FAE00445013 /* AssignmentResponsModel.swift in Sources */,
+				8F2EB48425A468E0002F46F2 /* MockMessage.swift in Sources */,
 				DAE97AAC23543B92009E52C3 /* PinterestLayout.swift in Sources */,
 				5B5E396F23E69B0000445013 /* StudentSelectionViewController.swift in Sources */,
 				DAAB9497241D4EE7001AC0F8 /* VideoplayerViewController.swift in Sources */,
@@ -1042,6 +1111,7 @@
 				DAEAF977233B226300699B67 /* QuestionType_Image_optionType_ImageCell.swift in Sources */,
 				DAAB9495241D4B2F001AC0F8 /* VideoListresponseModel.swift in Sources */,
 				DAA6ECC42355E4D40001A69C /* CategoryAddSubMainController.swift in Sources */,
+				8F2EB47F25A4688E002F46F2 /* NavigationController.swift in Sources */,
 				5B5E397323E6A46D00445013 /* AttendanceViewController.swift in Sources */,
 				DAE897E423335B5D00166BA6 /* OTPviewController.swift in Sources */,
 				5B5E398123E73BA900445013 /* HelpDeskResponsModel.swift in Sources */,
@@ -1054,9 +1124,11 @@
 				DAE8CC552330FA5D0068B0EC /* TermsSupporPrivacyController.swift in Sources */,
 				DAEACD63232FBE3400F44EE3 /* SelectedTypeViewController.swift in Sources */,
 				DA3806C1246031090032AE71 /* VideoResponseModel.swift in Sources */,
+				8F2EB48E25A46944002F46F2 /* MockUser.swift in Sources */,
 				5B59957323F6318E00EB0F75 /* StudentZoneViewController.swift in Sources */,
 				DA477F802328B780002A2ECC /* CardView.swift in Sources */,
 				5B58C69F23E3551D0075177E /* SelectedStudentCollectionViewCell.swift in Sources */,
+				8F2EB47B25A4686A002F46F2 /* Settings+UserDefaults.swift in Sources */,
 				DA477F7E2328B66D002A2ECC /* LoginviewController.swift in Sources */,
 				DA8B3B132339FC7500743B54 /* TestviewController.swift in Sources */,
 				DAE8CC4D2330E5FA0068B0EC /* PaymentHistoryViewController.swift in Sources */,
@@ -1235,12 +1307,12 @@
 		};
 		DA477F722328A9EA002A2ECC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8DF3F529A469DA03AD2FF5B /* Pods-bizzbrains.debug.xcconfig */;
+			baseConfigurationReference = 0BE59C0147F11DC598EF0689 /* Pods-bizzbrains.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.6;
+				CURRENT_PROJECT_VERSION = 3.7;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1256,7 +1328,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",
@@ -1308,12 +1380,12 @@
 		};
 		DA477F732328A9EA002A2ECC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7257EE863F3A8C63950C1546 /* Pods-bizzbrains.release.xcconfig */;
+			baseConfigurationReference = 25B06664AA7F744942ED8EC3 /* Pods-bizzbrains.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = bizzbrains/bizzbrains.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.6;
+				CURRENT_PROJECT_VERSION = 3.7;
 				DEVELOPMENT_TEAM = DCFAK3LXLP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1329,7 +1401,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/bizzbrains",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"z\"",

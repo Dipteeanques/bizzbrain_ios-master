@@ -51,7 +51,7 @@ extension UIViewController{
             segmentController.headerViewController = headerViewController
             segmentController.segmentControllers = [firstViewController,
                                                     secondViewController]
-            segmentController.headerViewHeight = 90
+            segmentController.headerViewHeight = 70
             segmentController.headerViewOffsetHeight = 31.0
             segmentController.segmentTitleColor = .lightGray
             segmentController.segmentSelectedTitleColor = .red

@@ -459,3 +459,66 @@ struct UpcomingMeetingSubData: Codable {
     let date_type: String
     
 }
+
+//MARK: get Teacher List
+struct TeacherListRoot: Codable {
+
+    let success: Bool
+    let data: [TeacherListData]
+    let message: String
+
+}
+
+struct TeacherListData: Codable {
+
+    let user_id: Int
+    let name: String
+    let firebase_id: String
+    let firebase_email: String
+    let firebase_password: String
+
+}
+
+
+//MARK: get get Firebase Detail
+struct getFirebaseDetailsRoot: Codable {
+
+    let success: Bool
+    let data: getFirebaseDetailsData
+    let message: String
+
+}
+
+
+struct getFirebaseDetailsData: Codable {
+
+    let id: Int
+    let user_id: Int
+    let type: String
+    let firebase_id: String
+    let firebase_email: String
+    let firebase_password: String
+    let created_at: String
+    let updated_at: String
+    let name: String
+
+}
+
+
+//MARK: get get Firebase Save
+struct getFirebaseSaveRoot: Codable {
+
+    let success: Bool
+    let data: getFirebaseSaveData
+    let message: String
+
+}
+
+struct getFirebaseSaveData: Codable {
+
+    let name: String
+    let firebase_id: String
+    let firebase_email: String
+    let firebase_password: String
+
+}

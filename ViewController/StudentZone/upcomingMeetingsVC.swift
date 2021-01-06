@@ -209,6 +209,7 @@ extension upcomingMeetingsVC: UITableViewDelegate,UITableViewDataSource{
     @objc func startAction(sender: UIButton)  {
         if let url = URL(string: arrUrl[sender.tag]) {//arrUpcomingMeeting?.data[sender.tag].url ?? ""
             UIApplication.shared.open(url)
+            transparentview.isHidden = true
         }
     }
     
